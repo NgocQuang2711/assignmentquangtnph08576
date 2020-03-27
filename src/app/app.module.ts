@@ -11,10 +11,12 @@ import { ContactComponent } from './contact/contact.component';
 import { ManageComponent } from './manage/manage.component';
 import { ProductService } from './product.service';
 import { HttpClientModule} from "@angular/common/http";
+import { ManageEditComponent } from './manage-edit/manage-edit.component';
+import { ManageDetailComponent } from './manage-detail/manage-detail.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, AboutComponent, ShopComponent, ContactComponent, ManageComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, AboutComponent, ShopComponent, ContactComponent, ManageComponent, ManageEditComponent, ManageDetailComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })

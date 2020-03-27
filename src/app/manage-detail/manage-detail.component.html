@@ -1,0 +1,17 @@
+<h2>Chi tiết sản phẩm</h2>
+<br>
+<hr>
+<div *ngIf="product">
+	<div class="card-body">
+		<a><img [src]="product.image"></a>
+			<h4 class="card-title">
+				<a>{{product.name}}</a>
+			</h4>
+			<h5>${{product.price}}</h5>
+			<p class="card-text">{{product.description}}</p>
+	</div>
+  <hr>
+</div>
+<a>..........................................................................................................</a>
+<button class="btn btn-secondary" routerLink="/contact" routerLinkActive="active">Return</button>
+<a>..........................................................................................................</a>
