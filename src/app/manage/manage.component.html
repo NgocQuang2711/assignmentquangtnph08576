@@ -23,8 +23,8 @@
 				<td>{{product.description}}</td>
 				<td><img [src]="product.image" width="200px"></td>
 
-				<td><button class="btn btn-secondary" routerLink="/product/{{product.id}}">Detail</button></td>
-				<td><button class="btn btn-secondary" routerLink="/product/edit/{{product.id}}">Edit</button></td>
+				<td><button class="btn btn-secondary" routerLink="/manage/{{product.id}}">Detail</button></td>
+				<td><button class="btn btn-secondary" routerLink="/mana/edit/{{product.id}}">Edit</button></td>
 				<td><button class="btn btn-secondary"  (click)="removeItem(product.id)">Remove</button></td>
 			</tr>
 		</tbody>
